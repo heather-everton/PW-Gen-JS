@@ -1,18 +1,8 @@
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
 <!-- PROJECT INTRO -->
 <br />
 <p align="center">
   <a href="https://github.com/heather-everton/PW-Gen-JS">
-    <img src="./assets/images/logo.jpg" alt="Logo" width="100%" height="100%">
+    <img src="./assets/images/logo.jpg" alt="Logo" width="30%" height="30%">
   </a>
 
   <h3 align="center">Password Generator</h3>
@@ -23,7 +13,7 @@
     <a href="https://github.com/heather-everton/PW-Gen-JS"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://heather-everton.github.io/PW-Gen-JS/">View Demo</a>
     ·
     <a href="https://github.com/heather-everton/PW-Gen-JS/issues">Report Bug</a>
     ·
@@ -47,7 +37,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<a href="https://www.github.com/heather-everton/PW-GGen-JS" rel="nofollow" >
+<a href="https://heather-everton.github.io/PW-Gen-JS/" rel="nofollow" >
     <img src="./assets/images/product-screenshot.jpg" alt="Password Generator Screenshot" width="100%" height="100%">
 </a>
 
