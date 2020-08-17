@@ -31,10 +31,10 @@ function pwLength(){
 
   //ask the user what the lenght of the passwoord is supposed to be.
   charLength = window.prompt ("How many characters would you like your password to be?");
-  charLength = parseInt(charLength);
+  charLength = parseInt(charLength)
   console.log ("Your password will be " + charLength + " characters long.");
   //validate that the user chose an optioin wiithin the 8 and 128.
-  if (charLength > 7 && charLength < 129){
+  if (charLength > 7 && charLength < 129 && charLength != NaN){
     //prompt next function and pass the length from teh window.prompt forward. 
     return setCriteria(charLength)
   } 
