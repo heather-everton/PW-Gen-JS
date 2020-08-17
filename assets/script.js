@@ -19,24 +19,28 @@ var reqArray = [];
 //Array we will put our password result in 
 var resultArray = [];
 
+document.getElementById('password').innerHTML = "";  
+
+
 function pwLength(){
   //clear arrays 
   optionArray = [];
   reqArray = [];
   resultArray = [];
+  var charLength = ("");
 
   //ask the user what the lenght of the passwoord is supposed to be.
-  var charLength = window.prompt ("How many characters would you like your password to be?");
+  charLength = window.prompt ("How many characters would you like your password to be?");
   charLength = parseInt(charLength);
   console.log ("Your password will be " + charLength + " characters long.");
   //validate that the user chose an optioin wiithin the 8 and 128.
-  if (charLength < 8 || charLength > 128){
-    window.alert("Please choose an option between 8 and 128.");
-    pwLength();
+  if (charLength > 7 && charLength < 129){
+    //prompt next function and pass the length from teh window.prompt forward. 
+    return setCriteria(charLength)
   } 
   else {
-      //prompt next function and pass the length from teh window.prompt forward. 
-      return setCriteria(charLength)
+    window.alert("Please choose an option between 8 and 128.");
+    pwLength();
   }
 }
 
@@ -138,7 +142,7 @@ function setPassword(userChoices) {
       // console.log (resultArray[i], reqArray[i]);
   }
   //return as a string
-  return resultArray.join('');  
+  return resultArray
 }
 
 // Get references to the #generate element
@@ -146,15 +150,14 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = pwLength();
+  pwLength();
+  var password = resultArray.join('')
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
-  document.passwordText('password').innerHTML = "";  
 }
 
-// Add event listener to generate button
+// Add event listener to generate buttons
 generateBtn.addEventListener("click", writePassword);
 
 //execute Functioin
